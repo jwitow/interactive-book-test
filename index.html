@@ -1,1 +1,9 @@
 <h1> Hello World!</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<script src="../dist/epub.min.js"></script>
+<div id="area"></div>
+<script>
+  var book = ePub("https://gwf.usask.ca/research-engagement/test-fr-export.epub");
+  var rendition = book.renderTo("area", {width: 600, height: 400});
+  var displayed = rendition.display();
+</script>
