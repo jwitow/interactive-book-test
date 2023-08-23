@@ -7,8 +7,8 @@
 <div id="area"></div>
 <script>
   var book = ePub("test.epub");
-  var rendition = book.renderTo("area");
-  rendition.display();
+  var rendition = book.renderTo("area", {width: 600, height: 400});
+  var displayed = rendition.display();
 </script>
 </body>
 </html>
